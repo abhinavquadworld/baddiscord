@@ -17,7 +17,7 @@ const cooldowns = new Discord.Collection();
 client.once('ready', () => {
 	console.log('Ready!');
 
-client.user.setActivity(`in ${client.guilds.cache.size} servers`);
+client.user.setActivity(`in ${client.guilds.cache.size} servers . type !help`);
 
 });
 
@@ -74,7 +74,7 @@ client.on('message', message => {
 	}
 });
 
-client.login('give me 1m nitros');
+client.login('give me nitro');
 
 //..................................
 client.on('message', message => {
@@ -103,3 +103,11 @@ client.on('message', message => {
   }
 });
 
+
+client.on('message', message => {
+                    // If the message is "what is my avatar"
+                    if (message.content === 'avatar') {
+                    // Send the user's avatar URL
+                    message.reply(message.author.avatarURL);
+                    }
+                    });
