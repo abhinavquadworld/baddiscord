@@ -9,10 +9,17 @@ module.exports = {
     .setColor(0x663399)
     .setTitle('Bots Latency')
     .setAuthor('made by .Abhinav#1630')
-    .setDescription(`🏓 | Latency is: **${Date.now() - message.createdTimestamp}ms.** || requested
-    by ${message.author}`)
+    .setDescription(`🏓 | Latency is: **${Date.now() - message.createdTimestamp}ms.** `)
     .setThumbnail('https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/menu/menu-realms.gif')
     //.setURL('https://discord.js.org/')
+    .setTimestamp()
+    .addFields(
+		{ name: 'Hosted in ', value: '🇮🇳' },
+		{ name: '\u200B', value: '\u200B' },
+		{ name: 'uptime', value: `use !uptime`, inline: true },
+		{ name: 'requested by  ', value: `${message.author}`, inline: true },
+	)
+ 
     message.channel.send(embed)
   }
 };

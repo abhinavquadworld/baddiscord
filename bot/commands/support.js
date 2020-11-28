@@ -10,7 +10,7 @@ module.exports = {
     .setTitle('click me')
     .setAuthor('made by .Abhinav#1630')
     .setDescription(`Thanks for thinking to donate . we give 60% of our donation to charity becoz 
-    i dont need money  `)
+    i dont need money `)
     .setThumbnail('https://www.gifandgif.eu/animated_gif/Money/Animated%20Gif%20Money%20%2813%29.GIF')
     .setURL('https://streamlabs.com/atgpikachu1705')
     message.channel.send(embed)

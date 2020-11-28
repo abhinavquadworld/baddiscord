@@ -17,7 +17,9 @@ const cooldowns = new Discord.Collection();
 client.once('ready', () => {
 	console.log('Ready!');
 
-client.user.setActivity(`in ${client.guilds.cache.size} servers . type !help`);
+client.user.setActivity(`in ${client.guilds.cache.size} servers . type /help`);
+
+
 
 });
 
@@ -74,9 +76,9 @@ client.on('message', message => {
 	}
 });
 
-client.login('give me nitro');
+client.login('lol');
 
-//..................................
+//..........................lol.....message...doesnt work though 
 client.on('message', message => {
   if (message.channel.type != 'text' || message.author.bot)
     return;
@@ -111,3 +113,10 @@ client.on('message', message => {
                     message.reply(message.author.avatarURL);
                     }
                     });
+
+//cmmm
+//if message.content.startsWith(`${prefix}cmm`)
+//let text = args.slice(1).join(" ")
+//if (!text) return message.channel.send('change your mind about what ?')
+
+ //fetch ('https://nekobot.xyz/api')
